@@ -1,1 +1,1 @@
-# Related-Recently-Viewed-Products-Proxy
+# Related-Recently-Viewed-Products
