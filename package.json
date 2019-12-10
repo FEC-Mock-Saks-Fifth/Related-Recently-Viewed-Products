@@ -8,7 +8,7 @@
     "start:server": "nodemon ./server",
     "start:dev": "webpack -d --watch",
     "db:start": "mongod",
-    "db:seed": "node ./server/db/seed-data.js"
+    "db:seed": "node ./db/seed-data.js"
   },
   "author": "Hunter Treadaway",
   "license": "ISC",
