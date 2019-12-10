@@ -10,13 +10,6 @@ const ToolTip = styled.div`
   border-color: darkGrey;
   background-color: white;
   z-index: 1;
-  // max-width: 600px;
-  // bottom: 100%;
-  // left: 50%;
-  // margin-left: -60px;
-  &::after {
-    content: " ";
-  }
 `;
 
 const ToolTipText = styled.div`

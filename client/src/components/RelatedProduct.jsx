@@ -42,6 +42,9 @@ const QuickViewHover = styled.div`
   &:hover {
     ${P4} {
       display: flex;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: underline;
     }
   }
 `;

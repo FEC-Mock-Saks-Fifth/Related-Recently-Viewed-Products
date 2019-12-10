@@ -39,7 +39,6 @@ const MailingList = styled.div`
 
 const MailingListLogo = styled.div`
   margin: 15px;
-  // flex-grow: 1;
 `;
 
 const MailingListLeft = styled.div`
@@ -47,7 +46,6 @@ const MailingListLeft = styled.div`
 `;
 
 const MailingListRight = styled.div`
-  // margin: 15px;
   border-style: solid;
   border-width: 0px 0px 0px 1px;
   border-color: lightGrey;
@@ -87,6 +85,7 @@ const ColumnHeader = styled.h3`
 const ColumnItem = styled.p`
   &:hover {
     color: white;
+    cursor: pointer;
   }
 `;
 
@@ -120,10 +119,15 @@ const FooterH2 = styled.p`
   margin: 0px 0px 15px 0px;
 `;
 
+const A = styled.a`
+  color: black;
+  font-weight: bold;
+`;
+
 var StaticComponents = () => (
   <div>
   <RelatedSearches>
-    <p>RELATED SEARCHES: <a href="">something something something</a>, <a href="">someotherthing someotherthing</a>, <a href="">yes this too and also this</a></p>
+    <p>RELATED SEARCHES: <A href="">something something something</A>, <A href="">someotherthing someotherthing</A>, <A href="">yes this too and also this</A></p>
   </RelatedSearches>
   <MailingList>
     <MailingListFlexContainer>
@@ -132,7 +136,7 @@ var StaticComponents = () => (
     </MailingListLogo>
     <MailingListLeft>
     <StartEarning>START EARNING POINTS & MORE</StartEarning>
-    <p>with our Exclusive Rewards Card <a href="">Apply Now</a></p>
+    <p>with our Exclusive Rewards Card <A href="">Apply Now</A></p>
     </MailingListLeft>
     <MailingListRight>
     <SignUpText>SIGN UP FOR DAILY EMAILS</SignUpText>
