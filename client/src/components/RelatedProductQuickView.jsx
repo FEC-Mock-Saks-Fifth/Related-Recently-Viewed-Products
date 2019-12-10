@@ -35,6 +35,11 @@ const P3 = styled.p`
   font-size: 12px;
 `;
 
+const A = styled.a`
+  font-weight: bold;
+  color: black;
+`;
+
 const RelatedProductQuickView = ({product, onClick}) => (
   <ToolTip onClick={onClick}>
     <Img src={product.product_image} />
@@ -42,7 +47,7 @@ const RelatedProductQuickView = ({product, onClick}) => (
     <P1>{product.product_description}</P1>
     <P3>Description:</P3>
     <P3>{product.product_long_description}</P3>
-    <a href="">View Product</a>
+    <A href="">View Product</A>
     </ToolTipText>
   </ToolTip>
 )
