@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const dbcontroller = require('../db/controllers');
+const dbcontroller = require('../../db/controllers');
 
 router.route('/api/all_products')
   .get(dbcontroller.getAll);
