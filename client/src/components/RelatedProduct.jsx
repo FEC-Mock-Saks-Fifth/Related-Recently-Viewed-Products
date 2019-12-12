@@ -21,8 +21,8 @@ class RelatedProduct extends React.Component {
       return(
         <div id="HTrelated_product_flex_item">
           <div id="HTquick_view_hover">
-          <img class="HTrelated_product_img" src={this.props.product.product_image} />
-          <p class="HTrelated_product_description">{this.props.product.product_description}</p>
+          <img className="HTrelated_product_img" src={this.props.product.product_image} />
+          <p className="HTrelated_product_description">{this.props.product.product_description}</p>
           <p className="HTrelated_product_long_description">{this.props.product.product_long_description}</p>
           <p id="HTquickview" onClick={this.showQuickView}>QUICKVIEW</p>
           </div>
@@ -32,8 +32,8 @@ class RelatedProduct extends React.Component {
       return(
         <div id="HTrelated_product_flex_item">
           <div id="HTrelated_product">
-          <img class="HTrelated_product_img" src={this.props.product.product_image} />
-          <p class="HTrelated_product_description">{this.props.product.product_description}</p>
+          <img className="HTrelated_product_img" src={this.props.product.product_image} />
+          <p className="HTrelated_product_description">{this.props.product.product_description}</p>
           <p className="HTrelated_product_long_description">{this.props.product.product_long_description}</p>
           <RelatedProductQuickView product={this.props.product} onClick={this.showQuickView}/>
           <p id="HTquickview" onClick={this.showQuickView}>QUICKVIEW</p>
