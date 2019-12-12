@@ -1,53 +1,49 @@
 import React from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import RelatedProductQuickView from './RelatedProductQuickView.jsx';
 
-const FlexItem = styled.div`
-  padding: 10px;
-  max-width: 325px;
-  min-width: 120px;
-  font-size: 12px;
-`;
-const Img = styled.img`
-  margin: 0px 10px;
-  width: 80px;
-  float: left;
-`;
+// const FlexItem = styled.div`
+//   padding: 10px;
+//   max-width: 325px;
+//   min-width: 120px;
+//   font-size: 12px;
+// `;
 
-const P1 = styled.p`
-  font-weight: 550;
-  font-size: 14px;
-  margin: 0px;
-`;
+// const Img = styled.img`
+//   margin: 0px 10px;
+//   width: 80px;
+//   float: left;
+// `;
 
-const P3 = styled.p`
-  font-size: 12px;
-  margin: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-`;
+// const P1 = styled.p`
+//   font-weight: 550;
+//   font-size: 14px;
+//   margin: 0px;
+// `;
 
-const P2 = styled.p`
-  font-style: underline;
-  font-size: 12px;
-`;
+// const P3 = styled.p`
+//   font-size: 12px;
+//   margin: 5px;
+//   text-overflow: ellipsis;
+//   overflow: hidden;
+//   white-space: nowrap;
+// `;
 
-const P4 = styled.a`
-  display: none;
-`;
+// const P4 = styled.a`
+//   display: none;
+// `;
 
-const QuickViewHover = styled.div`
-  &:hover {
-    ${P4} {
-      display: flex;
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  }
-`;
+// const QuickViewHover = styled.div`
+//   &:hover {
+//     ${P4} {
+//       display: flex;
+//       cursor: pointer;
+//       font-weight: bold;
+//       text-decoration: underline;
+//     }
+//   }
+// `;
 
 class RelatedProduct extends React.Component {
   constructor(props) {
@@ -65,30 +61,26 @@ class RelatedProduct extends React.Component {
   render() {
     if (this.state.show === false) {
       return(
-        <FlexItem >
-          <QuickViewHover>
-          <div id="related_product">
-          <Img src={this.props.product.product_image} />
-          <P1>{this.props.product.product_description}</P1>
-          <P3 className="product_description">{this.props.product.product_long_description}</P3>
-          <P4 onClick={this.showQuickView}>QUICKVIEW</P4>
+        <div id="related_product_flex_item">
+          <div id="quick_view_hover">
+          <img class="related_product_img" src={this.props.product.product_image} />
+          <p class="related_product_description">{this.props.product.product_description}</p>
+          <p className="related_product_long_description">{this.props.product.product_long_description}</p>
+          <p id="quickview" onClick={this.showQuickView}>QUICKVIEW</p>
           </div>
-          </QuickViewHover>
-        </FlexItem>
+        </div>
       )
     } else if (this.state.show === true) {
       return(
-        <FlexItem >
-          <QuickViewHover>
+        <div id="related_product_flex_item">
           <div id="related_product">
-          <Img src={this.props.product.product_image} />
-          <P1>{this.props.product.product_description}</P1>
-          <P3 className="product_description">{this.props.product.product_long_description}</P3>
+          <img class="related_product_img" src={this.props.product.product_image} />
+          <p class="related_product_description">{this.props.product.product_description}</p>
+          <p className="related_product_long_description">{this.props.product.product_long_description}</p>
           <RelatedProductQuickView product={this.props.product} onClick={this.showQuickView}/>
-          <P4 onClick={this.showQuickView}>QUICKVIEW</P4>
+          <p id="quickview" onClick={this.showQuickView}>QUICKVIEW</p>
           </div>
-          </QuickViewHover>
-        </FlexItem>
+        </div>
       )
     }
   }

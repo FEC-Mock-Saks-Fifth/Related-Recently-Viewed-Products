@@ -1,23 +1,23 @@
 import React from 'react';
 import axios from 'axios';
 import Product from './Product.jsx';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const ThemeProvider = styled.div`
-  font-family: Source Sans Pro, sans-serif;
-  text-align: center;
-`
+// const ThemeProvider = styled.div`
+//   font-family: Source Sans Pro, sans-serif;
+//   text-align: center;
+// `
 
-const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-`
+// const FlexContainer = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// `
 
-const H3 = styled.h3`
-  font-weight: 340;
-`
+// const H3 = styled.h3`
+//   font-weight: 340;
+// `
 
 class RecentlyViewedList extends React.Component {
   constructor() {
@@ -44,16 +44,14 @@ class RecentlyViewedList extends React.Component {
 
   render() {
     return(
-      <ThemeProvider>
-      <div>
-        <H3>Recently Viewed</H3>
-        <FlexContainer id="recently_viewed">
+      <div id="theme">
+        <h3 id="rec_products_h3">Recently Viewed</h3>
+        <div id="recommended_products_list">
           {this.state.products.map((product, i) => {
             return <Product product={product} key={i} />
           })}
-        </FlexContainer>
+        </div>
       </div>
-      </ThemeProvider>
     )
   }
 }

@@ -1,23 +1,23 @@
 import React from 'react';
 import Product from './Product.jsx';
 import axios from 'axios';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const ThemeProvider = styled.div`
-  font-family: Source Sans Pro, sans-serif;
-  text-align: center;
-`
+// const ThemeProvider = styled.div`
+//   font-family: Source Sans Pro, sans-serif;
+//   text-align: center;
+// `
 
-const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-`
+// const FlexContainer = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// `
 
-const H3 = styled.h3`
-  font-weight: 340;
-`
+// const H3 = styled.h3`
+//   font-weight: 340;
+// `
 
 class RecommendedProductsList extends React.Component {
   constructor(props) {
@@ -44,14 +44,15 @@ class RecommendedProductsList extends React.Component {
 
   render() {
     return(
-      <ThemeProvider>
+      <div id="theme">
       <div>
-        <H3>YOU MAY ALSO LIKE</H3>
-        <FlexContainer id="recommended_products_list">{this.state.products.map((product, i) => {
+        <h3 id="rec_products_h3">YOU MAY ALSO LIKE</h3>
+        <div id="recommended_products_list">
+        {this.state.products.map((product, i) => {
         return <Product product={product} key={i} />
-        })}</FlexContainer>
+        })}</div>
       </div>
-      </ThemeProvider>
+      </div>
     )
   }
 }
