@@ -26,7 +26,7 @@ class RelatedProductsList extends React.Component {
   */
 
   getRelatedProducts() {
-    axios.get('/api/related_products')
+    axios.get('/hunter_related_products')
       .then((results) => {
         this.setState({products: results.data})
       })

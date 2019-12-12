@@ -84,7 +84,7 @@ p#HTquickview {
   display: none;
 }
 
-div#HTquick_view_hover:hover #quickview {
+div#HTquick_view_hover:hover #HTquickview {
   display: flex;
   cursor: pointer;
   font-weight: bold;

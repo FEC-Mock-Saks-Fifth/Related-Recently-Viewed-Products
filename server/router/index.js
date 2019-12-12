@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const dbcontroller = require('../../db/controllers');
 
-router.route('/api/all_products')
+router.route('/hunter_all_products')
   .get(dbcontroller.getAll);
 
-router.route('/api/related_products')
+router.route('/hunter_related_products')
   .get(dbcontroller.getRelatedProducts);
 
 // the following routes are currently unused:

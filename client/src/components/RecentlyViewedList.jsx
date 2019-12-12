@@ -13,7 +13,7 @@ class RecentlyViewedList extends React.Component {
   }
 
   getAll() {
-    axios.get('/api/all_products')
+    axios.get('/hunter_all_products')
       .then((results) => {
         this.setState({products: results.data})
       })
