@@ -11,6 +11,18 @@ var dbcontrollers = {
     })
   },
 
+  getRelatedProducts: (req, res) => {
+    Product.findRandom({}, {}, {limit: 3}, function(err, results) {
+      if (err) {
+        res.status(404).send('error finding related products', err)
+      } else {
+        res.json(results)
+      }
+    })
+  }
+
+  // The following routes are not currently used anywhere
+  
   // getRecommended: (req, res) => {
   //   // Product.find({}).limit(6)
     //   .then((products) => {
@@ -23,23 +35,13 @@ var dbcontrollers = {
 
   // getRecent: (req, res) => {
   // Product.find({}).limit(6)
-    //   .then((products) => {
-    //     res.json(products)
-    //   })
-    //   .catch((err) => {
-    //     res.status(404).send('error finding all products: ', err)
-    //   })
+  //     .then((products) => {
+  //       res.json(products)
+  //     })
+  //     .catch((err) => {
+  //       res.status(404).send('error finding all products: ', err)
+  //     })
   // },
-
-  getRelatedProducts: (req, res) => {
-    Product.findRandom({}, {}, {limit: 3}, function(err, results) {
-      if (err) {
-        res.status(404).send('error finding related products', err)
-      } else {
-        res.json(results)
-      }
-    })
-  }
 }
 
 module.exports = dbcontrollers;

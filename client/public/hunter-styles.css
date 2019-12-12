@@ -1,57 +1,59 @@
 /* --- RECOMMENDED AND RECENTLY VIEWED PRODUCT LISTS --- */
-div#theme {
+div#HTtheme {
   font-family: Source Sans Pro, sans-serif;
   text-align: center;
 }
 
-div #recommended_products_list {
+div #HTrecommended_products_list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-h3#rec_products_h3 {
+h3#HTrec_products_h3 {
   font-weight: 340;
 }
 
+
 /* --- PRODUCT --- */
-div #product {
+div #HTproduct {
   padding: 10px;
   max-width: 140px;
   min-width: 120px;
   font-size: 12px;
 }
 
-div #product:hover {
+div #HTproduct:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-img.product_image {
+img.HTproduct_image {
   margin: 5px 10px 60px 10px;
   width: 135px;
 }
 
-p.product_brand {
+p.HTproduct_brand {
   font-weight: 550;
   font-size: 14px;
   margin: 0px;
 }
 
-p.product_description {
+p.HTproduct_description {
   font-size: 12px;
   margin: 5px;
 }
 
-p.product_rating_num {
+p.HTproduct_rating_num {
   font-weight: bold;
   font-size: 12px;
   margin: 0px;
 }
 
+
 /* --- RELATED PRODUCTS LIST --- */
-div #related_products_list {
+div #HTrelated_products_list {
   font-family: Source Sans Pro, sans-serif;
   text-align: center;
   border-style: solid;
@@ -60,43 +62,42 @@ div #related_products_list {
   margin: auto;
   max-width: 1050px;
 }
-
 /* h3 for this component uses the h3 from recommended & recently viewed products list above */
-
 /* flex container here is a global element */
 
+
 /* --- RELATED PRODUCT --- */
-div #related_product_flex_item {
+div #HTrelated_product_flex_item {
   padding: 10px;
   max-width: 325px;
   min-width: 120px;
   font-size: 12px;
 }
 
-img.related_product_img {
+img.HTrelated_product_img {
   margin: 0px 10px;
   width: 80px;
   float: left;
 }
 
-p#quickview {
+p#HTquickview {
   display: none;
 }
 
-div#quick_view_hover:hover #quickview {
+div#HTquick_view_hover:hover #quickview {
   display: flex;
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
 }
 
-p.related_product_description {
+p.HTrelated_product_description {
   font-weight: 550;
   font-size: 14px;
   margin: 0px;
 }
 
-p.related_product_long_description {
+p.HTrelated_product_long_description {
   font-size: 12px;
   margin: 5px;
   text-overflow: ellipsis;
@@ -104,8 +105,9 @@ p.related_product_long_description {
   white-space: nowrap;
 }
 
+
 /* --- RELATED PRODUCT QUICK VIEW --- */
-div.tool_tip {
+div.HTtool_tip {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,20 +118,20 @@ div.tool_tip {
   z-index: 1;
 }
 
-img.quickview_img {
+img.HTquickview_img {
   margin: 45px 15px 15px 15px;
   width: 80px;
   height: 80px;
   float: left;
 }
 
-div.tool_tip_text {
+div.HTtool_tip_text {
   text-align: left;
   max-width: 300px;
   margin: 15px;
 }
 
-p.quickview_default {
+p.HTquickview_default {
   font-size: 12px;
 }
 
@@ -138,8 +140,9 @@ a {
   color: black;
 }
 
+
 /* --- STATIC COMPONENTS --- */
-div#related_searches {
+div#HTrelated_searches {
   font-family: Source Sans Pro, sans-serif;
   font-size: 12px;
   text-align: left;
@@ -151,7 +154,7 @@ div#related_searches {
   max-width: 1050px;
 }
 
-div#mailing_list {
+div#HTmailing_list {
   font-family: Source Sans Pro, sans-serif;
   font-size: 12px;
   text-align: left;
@@ -162,7 +165,7 @@ div#mailing_list {
   max-width: 1050px;
 }
 
-div#mailing_list_flex_container {
+div#HTmailing_list_flex_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -175,37 +178,37 @@ div#mailing_list_flex_container {
   border-width: 1px 0px 0px 0px;
 }
 
-div#mailing_list_logo {
+div#HTmailing_list_logo {
   margin: 15px;
 }
 
-div#mailing_list_left {
+div#HTmailing_list_left {
   margin: 0px 15px 15px 15px;
 }
 
-div#mailing_list_right {
+div#HTmailing_list_right {
   border-style: solid;
   border-width: 0px 0px 0px 1px;
   border-color: lightGrey;
 }
 
-p.start_earning {
+p.HTstart_earning {
   font-size: 16px;
 }
 
-p.sign_up_text {
+p.HTsign_up_text {
   margin: 15px;
   font-size: 16px;
 }
 
-input.sign_up_input {
+input.HTsign_up_input {
   margin-left: 15px;
   width: 300px;
   height: 30px;
   border: 2px solid darkGrey;
 }
 
-div#footer {
+div#HTfooter {
   font-family: Source Sans Pro, sans-serif;
   font-size: 12px;
   text-align: center;
@@ -215,18 +218,18 @@ div#footer {
   height: 100%;
 }
 
-p.footer_h1 {
+p.HTfooter_h1 {
   font-size: 30px;
   padding: 30px 0px 0px 0px;
   margin: 0px 0px 5px 0px;
 }
 
-p.footer_h2 {
+p.HTfooter_h2 {
   font-size: 20px;
   margin: 0px 0px 15px 0px;
 }
 
-div#static_flex_container {
+div#HTstatic_flex_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -239,17 +242,17 @@ div#static_flex_container {
   border-width: 1px 0px 0px 0px;
 }
 
-div#static_flex_item {
+div#HTstatic_flex_item {
   margin: 0px 110px 0px 0px;
   text-align: left;
 }
 
-h3.column_header {
+h3.HTcolumn_header {
   font-size: 16px;
   font-weight: 40;
 }
 
-p.footer_item:hover {
+p.HTfooter_item:hover {
   color: white;
   cursor: pointer;
 }
