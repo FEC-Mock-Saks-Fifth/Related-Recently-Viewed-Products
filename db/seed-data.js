@@ -167,8 +167,10 @@ var generateData = function() {
 
 const seedDatabase = function() {
   Product.deleteMany({})
-  .then(Product.create(data))
-  // .then(db.close()); <----- crashes the app, close DB yourself after running seed (ctrl^ + c);
+  .then(() => Product.create(data))
+  .then(() => {
+    process.exit()
+  })
 }
 
 generateData();

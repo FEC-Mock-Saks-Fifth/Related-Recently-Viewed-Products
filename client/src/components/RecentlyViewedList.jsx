@@ -41,3 +41,4 @@ class RecentlyViewedList extends React.Component {
 }
 
 export default RecentlyViewedList;
+
