@@ -13,7 +13,7 @@
   "author": "Hunter Treadaway",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bluebird": "^3.5.3",
     "body-parser": "^1.17.2",
     "enzyme": "^3.10.0",
